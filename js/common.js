@@ -75,8 +75,16 @@ const Router = {
         
         // 处理初始hash
         const hash = window.location.hash.slice(1);
-        if (hash && document.getElementById('page-' + hash)) {
-            this.showPage(hash);
+        console.log('Router init, hash:', hash);
+        if (hash) {
+            const targetPage = document.getElementById('page-' + hash);
+            console.log('Target page element:', targetPage);
+            if (targetPage) {
+                console.log('Showing page:', hash);
+                this.showPage(hash);
+            } else {
+                console.log('Page not found:', 'page-' + hash);
+            }
         }
     }
 };
