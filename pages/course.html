@@ -1,0 +1,849 @@
+<!-- 初级课程内容 -->
+<div class="course-container">
+    <div class="course-header">
+        <h2>🎓 Python 初级课程</h2>
+        <p>8大核心章节，从零开始构建Python基础能力</p>
+    </div>
+
+    <div class="chapter-list">
+        <!-- 第1章：Python初探 -->
+        <div class="chapter-item" data-chapter="0">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">01</div>
+                    <div class="chapter-title-text">
+                        <h3>Python 初探</h3>
+                        <span>什么是编程 · 安装Python · 第一行代码 · print()详解</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>通过本章学习，你将了解什么是编程，学会安装Python环境，并写出你的第一行代码！</p>
+                        </div>
+                    </div>
+                    
+                    <div class="lesson-section">
+                        <h4>📖 什么是编程</h4>
+                        <div class="lesson-text">
+                            <p>编程就是给计算机写指令，让它按照我们的想法工作。就像给机器人下命令一样！</p>
+                            <p>Python是一门非常友好的编程语言，语法简单，适合初学者入门。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>💻 安装Python</h4>
+                        <div class="lesson-text">
+                            <p>访问 python.org 下载最新版本的Python，安装时记得勾选"Add Python to PATH"选项。</p>
+                        </div>
+                        <pre class="code-block"><code># 验证安装
+python --version</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🚀 第一行代码</h4>
+                        <div class="lesson-text">
+                            <p>打开Python，输入以下代码：</p>
+                        </div>
+                        <pre class="code-block"><code>print("Hello, World!")
+print("你好，Python！")</code></pre>
+                        <div class="lesson-text">
+                            <p><strong>print()</strong> 是Python的输出函数，可以把内容显示在屏幕上。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>✨ print()函数详解</h4>
+                        <div class="lesson-text">
+                            <p>print()函数可以输出多种内容：</p>
+                        </div>
+                        <pre class="code-block"><code># 输出文字
+print("Hello")
+
+# 输出数字
+print(123)
+
+# 输出多个内容
+print("年龄:", 10)
+
+# 自定义分隔符
+print("A", "B", "C", sep="-")
+
+# 自定义结束符
+print("第一行", end=" ")
+print("第二行")</code></pre>
+                    </div>
+
+                    <div class="quiz-section">
+                        <h4>🧪 小测验</h4>
+                        <div class="quiz-item">
+                            <div class="quiz-question">1. print("Hello") 会输出什么？</div>
+                            <div class="quiz-options">
+                                <label class="quiz-option" data-question="ch1-q1" data-correct="true">
+                                    <input type="radio" name="ch1-q1"> Hello
+                                </label>
+                                <label class="quiz-option" data-question="ch1-q1" data-correct="false">
+                                    <input type="radio" name="ch1-q1"> "Hello"
+                                </label>
+                                <label class="quiz-option" data-question="ch1-q1" data-correct="false">
+                                    <input type="radio" name="ch1-q1"> 什么都不输出
+                                </label>
+                            </div>
+                            <div class="quiz-feedback" id="feedback-ch1-q1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第2章：变量与数据类型 -->
+        <div class="chapter-item" data-chapter="1">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">02</div>
+                    <div class="chapter-title-text">
+                        <h3>变量与数据类型</h3>
+                        <span>数字 · 字符串 · 类型转换 · 运算符</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会使用变量存储数据，理解不同的数据类型，掌握基本运算。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📦 什么是变量</h4>
+                        <div class="lesson-text">
+                            <p>变量就像是一个盒子，可以存放各种数据。给盒子起个名字，以后就可以通过名字找到里面的数据。</p>
+                        </div>
+                        <pre class="code-block"><code># 创建变量
+name = "小明"
+age = 10
+height = 1.45
+
+# 使用变量
+print(name)
+print(age)
+print(height)</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔢 数字类型</h4>
+                        <div class="lesson-text">
+                            <p>Python中有两种数字类型：</p>
+                        </div>
+                        <pre class="code-block"><code># 整数 (int)
+apples = 5
+students = 30
+
+# 浮点数 (float) - 小数
+price = 3.5
+temperature = 36.5
+
+# 查看类型
+print(type(apples))    # &lt;class 'int'&gt;
+print(type(price))     # &lt;class 'float'&gt;</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📝 字符串类型</h4>
+                        <div class="lesson-text">
+                            <p>字符串就是文字，用单引号或双引号包裹：</p>
+                        </div>
+                        <pre class="code-block"><code># 创建字符串
+name = '小明'
+school = "阳光小学"
+
+# 字符串拼接
+greeting = "你好, " + name
+print(greeting)
+
+# 字符串重复
+line = "-" * 20
+print(line)</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔄 类型转换</h4>
+                        <div class="lesson-text">
+                            <p>有时候需要在不同类型之间转换：</p>
+                        </div>
+                        <pre class="code-block"><code># 数字转字符串
+num = 100
+str_num = str(num)
+print("数字是: " + str_num)
+
+# 字符串转整数
+age_str = "10"
+age = int(age_str)
+print(age + 5)  # 15
+
+# 字符串转浮点数
+price_str = "9.9"
+price = float(price_str)
+print(price * 2)  # 19.8</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>➕ 运算符</h4>
+                        <div class="lesson-text">
+                            <p>Python支持各种数学运算：</p>
+                        </div>
+                        <pre class="code-block"><code># 算术运算符
+a, b = 10, 3
+print(a + b)   # 加法: 13
+print(a - b)   # 减法: 7
+print(a * b)   # 乘法: 30
+print(a / b)   # 除法: 3.33...
+print(a // b)  # 整除: 3
+print(a % b)   # 取余: 1
+print(a ** b)  # 幂运算: 1000</code></pre>
+                    </div>
+
+                    <div class="quiz-section">
+                        <h4>🧪 小测验</h4>
+                        <div class="quiz-item">
+                            <div class="quiz-question">1. 执行 a = "5", b = 3, print(a + b) 会输出什么？</div>
+                            <div class="quiz-options">
+                                <label class="quiz-option" data-question="ch2-q1" data-correct="false">
+                                    <input type="radio" name="ch2-q1"> 8
+                                </label>
+                                <label class="quiz-option" data-question="ch2-q1" data-correct="false">
+                                    <input type="radio" name="ch2-q1"> 报错
+                                </label>
+                                <label class="quiz-option" data-question="ch2-q1" data-correct="true">
+                                    <input type="radio" name="ch2-q1"> "53"
+                                </label>
+                            </div>
+                            <div class="quiz-feedback" id="feedback-ch2-q1"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第3章：输入与输出 -->
+        <div class="chapter-item" data-chapter="2">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">03</div>
+                    <div class="chapter-title-text">
+                        <h3>输入与输出</h3>
+                        <span>input()函数 · 格式化输出 · 交互程序 · 类型转换</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会获取用户输入，创建可以交互的程序。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>⌨️ input()函数</h4>
+                        <div class="lesson-text">
+                            <p>input()函数可以让程序暂停，等待用户输入：</p>
+                        </div>
+                        <pre class="code-block"><code># 获取用户输入
+name = input("请输入你的名字: ")
+print("你好, " + name + "!")
+
+# 获取数字输入（需要转换）
+age = input("请输入你的年龄: ")
+age = int(age)  # 转换为整数
+print("明年你就" + str(age + 1) + "岁了")</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🎨 格式化输出</h4>
+                        <div class="lesson-text">
+                            <p>使用f-string让输出更美观：</p>
+                        </div>
+                        <pre class="code-block"><code>name = "小明"
+age = 10
+score = 95.5
+
+# f-string格式化
+print(f"姓名: {name}")
+print(f"年龄: {age}岁")
+print(f"成绩: {score}分")
+print(f"{name}今年{age}岁，考了{score}分！")</code></pre>
+                    </div>
+
+                    <div class="coding-exercise">
+                        <h4>💻 编程练习</h4>
+                        <div class="coding-task">
+                            <p><strong>任务：</strong>编写一个程序，询问用户的姓名和年龄，然后输出一段欢迎信息。</p>
+                        </div>
+                        <div class="coding-hint">
+                            <strong>提示：</strong>使用 input() 获取输入，使用 f-string 格式化输出
+                        </div>
+                        <pre class="code-block"><code># 示例答案
+name = input("请输入你的名字: ")
+age = int(input("请输入你的年龄: "))
+
+print(f"你好，{name}！")
+print(f"你今年{age}岁，是个很棒的小程序员！")</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第4章：条件判断 -->
+        <div class="chapter-item" data-chapter="3">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">04</div>
+                    <div class="chapter-title-text">
+                        <h3>条件判断</h3>
+                        <span>if语句 · 比较运算符 · 逻辑判断 · 嵌套if</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会让程序根据不同情况做出不同决定。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🤔 if语句</h4>
+                        <div class="lesson-text">
+                            <p>if语句让程序可以"思考"：</p>
+                        </div>
+                        <pre class="code-block"><code>age = 12
+
+if age >= 10:
+    print("你可以学习Python了！")
+
+# if-else
+score = 85
+if score >= 60:
+    print("及格了！")
+else:
+    print("需要再努力！")
+
+# if-elif-else
+grade = 85
+if grade >= 90:
+    print("优秀！")
+elif grade >= 80:
+    print("良好！")
+elif grade >= 60:
+    print("及格！")
+else:
+    print("不及格")</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>⚖️ 比较运算符</h4>
+                        <div class="lesson-text">
+                            <table class="word-table">
+                                <tr><th>运算符</th><th>含义</th><th>示例</th></tr>
+                                <tr><td>==</td><td>等于</td><td>5 == 5 为 True</td></tr>
+                                <tr><td>!=</td><td>不等于</td><td>5 != 3 为 True</td></tr>
+                                <tr><td>&gt;</td><td>大于</td><td>5 &gt; 3 为 True</td></tr>
+                                <tr><td>&lt;</td><td>小于</td><td>3 &lt; 5 为 True</td></tr>
+                                <tr><td>&gt;=</td><td>大于等于</td><td>5 &gt;= 5 为 True</td></tr>
+                                <tr><td>&lt;=</td><td>小于等于</td><td>3 &lt;= 5 为 True</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔗 逻辑运算符</h4>
+                        <div class="lesson-text">
+                            <p>组合多个条件：</p>
+                        </div>
+                        <pre class="code-block"><code># and: 两个条件都满足
+age = 15
+if age >= 10 and age <= 18:
+    print("你是青少年")
+
+# or: 满足其中一个
+score = 95
+if score == 100 or score >= 90:
+    print("成绩优秀！")
+
+# not: 取反
+is_raining = False
+if not is_raining:
+    print("今天不下雨，可以出去玩！")</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第5章：循环结构 -->
+        <div class="chapter-item" data-chapter="4">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">05</div>
+                    <div class="chapter-title-text">
+                        <h3>循环结构</h3>
+                        <span>for循环 · while循环 · 循环控制 · range详解</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会让程序重复执行任务，提高效率。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔄 for循环</h4>
+                        <div class="lesson-text">
+                            <p>for循环用于遍历序列：</p>
+                        </div>
+                        <pre class="code-block"><code># 遍历数字
+for i in range(5):
+    print(i)  # 输出 0, 1, 2, 3, 4
+
+# 遍历字符串
+for char in "Python":
+    print(char)
+
+# 遍历列表
+fruits = ["苹果", "香蕉", "橙子"]
+for fruit in fruits:
+    print(fruit)</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🎯 range()函数</h4>
+                        <div class="lesson-text">
+                            <p>range()生成数字序列：</p>
+                        </div>
+                        <pre class="code-block"><code># range(结束) - 从0开始
+for i in range(5):
+    print(i)  # 0, 1, 2, 3, 4
+
+# range(开始, 结束)
+for i in range(1, 6):
+    print(i)  # 1, 2, 3, 4, 5
+
+# range(开始, 结束, 步长)
+for i in range(0, 10, 2):
+    print(i)  # 0, 2, 4, 6, 8</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔄 while循环</h4>
+                        <div class="lesson-text">
+                            <p>while循环在条件为真时持续执行：</p>
+                        </div>
+                        <pre class="code-block"><code># 基础while循环
+count = 0
+while count < 5:
+    print(count)
+    count = count + 1
+
+# 用户输入验证
+password = ""
+while password != "1234":
+    password = input("请输入密码: ")
+print("密码正确！")</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🛑 循环控制</h4>
+                        <div class="lesson-text">
+                            <p>break和continue控制循环流程：</p>
+                        </div>
+                        <pre class="code-block"><code># break - 跳出循环
+for i in range(10):
+    if i == 5:
+        break
+    print(i)  # 输出 0-4
+
+# continue - 跳过当前迭代
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)  # 输出 0, 1, 3, 4</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第6章：列表与元组 -->
+        <div class="chapter-item" data-chapter="5">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">06</div>
+                    <div class="chapter-title-text">
+                        <h3>列表与元组</h3>
+                        <span>列表操作 · 索引切片 · 遍历列表 · 常用方法</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会使用列表和元组存储多个数据。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📋 列表基础</h4>
+                        <div class="lesson-text">
+                            <p>列表可以存储多个数据，用方括号表示：</p>
+                        </div>
+                        <pre class="code-block"><code># 创建列表
+fruits = ["苹果", "香蕉", "橙子"]
+numbers = [1, 2, 3, 4, 5]
+mixed = ["小明", 10, 3.14, True]
+
+# 访问元素（索引从0开始）
+print(fruits[0])   # 苹果
+print(fruits[1])   # 香蕉
+
+# 修改元素
+fruits[0] = "西瓜"
+print(fruits)      # ['西瓜', '香蕉', '橙子']</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>✂️ 列表切片</h4>
+                        <div class="lesson-text">
+                            <p>获取列表的一部分：</p>
+                        </div>
+                        <pre class="code-block"><code>numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# 切片语法: list[开始:结束:步长]
+print(numbers[2:5])    # [2, 3, 4]
+print(numbers[:3])     # [0, 1, 2]
+print(numbers[7:])     # [7, 8, 9]
+print(numbers[::2])    # [0, 2, 4, 6, 8]</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🛠️ 列表方法</h4>
+                        <div class="lesson-text">
+                            <table class="word-table">
+                                <tr><th>方法</th><th>作用</th><th>示例</th></tr>
+                                <tr><td>append()</td><td>添加元素</td><td>list.append("新元素")</td></tr>
+                                <tr><td>insert()</td><td>插入元素</td><td>list.insert(0, "开头")</td></tr>
+                                <tr><td>remove()</td><td>删除元素</td><td>list.remove("苹果")</td></tr>
+                                <tr><td>pop()</td><td>弹出元素</td><td>list.pop()</td></tr>
+                                <tr><td>sort()</td><td>排序</td><td>list.sort()</td></tr>
+                                <tr><td>reverse()</td><td>反转</td><td>list.reverse()</td></tr>
+                                <tr><td>len()</td><td>获取长度</td><td>len(list)</td></tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📦 元组</h4>
+                        <div class="lesson-text">
+                            <p>元组是不可变的列表，用圆括号表示：</p>
+                        </div>
+                        <pre class="code-block"><code># 创建元组
+coordinates = (10, 20)
+colors = ("红", "绿", "蓝")
+
+# 访问元素
+print(coordinates[0])  # 10
+
+# 元组不可修改
+# coordinates[0] = 15  # 会报错！
+
+# 元组解包
+x, y = coordinates
+print(x, y)  # 10 20</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第7章：函数基础 -->
+        <div class="chapter-item" data-chapter="6">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">07</div>
+                    <div class="chapter-title-text">
+                        <h3>函数基础</h3>
+                        <span>定义函数 · 参数与返回值 · 模块化编程 · 作用域</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会创建和调用函数，让代码更简洁、可复用。</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🔧 定义函数</h4>
+                        <div class="lesson-text">
+                            <p>使用def关键字定义函数：</p>
+                        </div>
+                        <pre class="code-block"><code># 定义函数
+def say_hello():
+    print("你好！")
+    print("欢迎学习Python！")
+
+# 调用函数
+say_hello()
+say_hello()</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📥 函数参数</h4>
+                        <div class="lesson-text">
+                            <p>函数可以接受输入数据：</p>
+                        </div>
+                        <pre class="code-block"><code># 带参数的函数
+def greet(name):
+    print(f"你好，{name}！")
+
+greet("小明")
+greet("小红")
+
+# 多个参数
+def add(a, b):
+    result = a + b
+    print(f"{a} + {b} = {result}")
+
+add(3, 5)
+add(10, 20)</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>📤 返回值</h4>
+                        <div class="lesson-text">
+                            <p>函数可以返回计算结果：</p>
+                        </div>
+                        <pre class="code-block"><code># 带返回值的函数
+def multiply(a, b):
+    return a * b
+
+result = multiply(4, 5)
+print(result)  # 20
+
+# 多返回值
+def get_min_max(numbers):
+    return min(numbers), max(numbers)
+
+min_val, max_val = get_min_max([3, 1, 4, 1, 5])
+print(f"最小值: {min_val}, 最大值: {max_val}")</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🎯 默认参数</h4>
+                        <div class="lesson-text">
+                            <p>给参数设置默认值：</p>
+                        </div>
+                        <pre class="code-block"><code>def greet(name, greeting="你好"):
+    print(f"{greeting}，{name}！")
+
+greet("小明")           # 你好，小明！
+greet("小红", "早上好")  # 早上好，小红！</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第8章：综合项目实战 -->
+        <div class="chapter-item" data-chapter="7">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num">08</div>
+                    <div class="chapter-title-text">
+                        <h3>综合项目实战</h3>
+                        <span>猜数字游戏 · 简易计算器 · 成绩管理系统 · 石头剪刀布</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>通过实战项目巩固所学知识，体验编程的乐趣！</p>
+                        </div>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🎮 项目1：猜数字游戏</h4>
+                        <div class="lesson-text">
+                            <p>计算机随机生成一个数字，玩家来猜：</p>
+                        </div>
+                        <pre class="code-block"><code>import random
+
+def guess_number():
+    secret = random.randint(1, 100)
+    attempts = 0
+    
+    print("🎮 猜数字游戏！")
+    print("我想了一个1-100之间的数字，你来猜！")
+    
+    while True:
+        guess = int(input("请输入你的猜测: "))
+        attempts += 1
+        
+        if guess < secret:
+            print("📉 太小了！")
+        elif guess > secret:
+            print("📈 太大了！")
+        else:
+            print(f"🎉 恭喜你猜对了！答案是{secret}")
+            print(f"你用了{attempts}次")
+            break
+
+guess_number()</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🧮 项目2：简易计算器</h4>
+                        <div class="lesson-text">
+                            <p>实现一个可以进行基本运算的计算器：</p>
+                        </div>
+                        <pre class="code-block"><code>def calculator():
+    print("🧮 简易计算器")
+    print("操作: + - * /")
+    
+    while True:
+        num1 = float(input("输入第一个数字: "))
+        op = input("选择操作 (+ - * /): ")
+        num2 = float(input("输入第二个数字: "))
+        
+        if op == '+':
+            result = num1 + num2
+        elif op == '-':
+            result = num1 - num2
+        elif op == '*':
+            result = num1 * num2
+        elif op == '/':
+            result = num1 / num2
+        else:
+            print("❌ 无效操作")
+            continue
+        
+        print(f"结果: {result}")
+        
+        again = input("继续计算? (y/n): ")
+        if again.lower() != 'y':
+            break
+
+calculator()</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>🎓 项目3：成绩管理系统</h4>
+                        <div class="lesson-text">
+                            <p>管理学生成绩，计算平均分：</p>
+                        </div>
+                        <pre class="code-block"><code>def grade_system():
+    students = []
+    
+    while True:
+        print("\n📚 成绩管理系统")
+        print("1. 添加学生")
+        print("2. 查看所有成绩")
+        print("3. 计算平均分")
+        print("4. 退出")
+        
+        choice = input("请选择 (1-4): ")
+        
+        if choice == '1':
+            name = input("学生姓名: ")
+            score = float(input("成绩: "))
+            students.append({"name": name, "score": score})
+            print(f"✅ 已添加 {name}")
+            
+        elif choice == '2':
+            print("\n📋 成绩列表:")
+            for s in students:
+                print(f"  {s['name']}: {s['score']}分")
+                
+        elif choice == '3':
+            if students:
+                avg = sum(s['score'] for s in students) / len(students)
+                print(f"📊 平均分: {avg:.2f}分")
+            else:
+                print("⚠️ 没有数据")
+                
+        elif choice == '4':
+            print("👋 再见！")
+            break
+
+grade_system()</code></pre>
+                    </div>
+
+                    <div class="lesson-section">
+                        <h4>✊ 项目4：石头剪刀布</h4>
+                        <div class="lesson-text">
+                            <p>经典的猜拳游戏：</p>
+                        </div>
+                        <pre class="code-block"><code>import random
+
+def rock_paper_scissors():
+    choices = ["石头", "剪刀", "布"]
+    
+    print("✊ 石头剪刀布！")
+    print("0-石头, 1-剪刀, 2-布")
+    
+    player = int(input("你的选择: "))
+    computer = random.randint(0, 2)
+    
+    print(f"你: {choices[player]}")
+    print(f"电脑: {choices[computer]}")
+    
+    if player == computer:
+        print("🤝 平局！")
+    elif (player - computer) % 3 == 1:
+        print("😢 你输了！")
+    else:
+        print("🎉 你赢了！")
+
+rock_paper_scissors()</code></pre>
+                    </div>
+
+                    <div class="lesson-section" style="background: linear-gradient(135deg, rgba(0, 242, 96, 0.1), rgba(79, 172, 254, 0.1)); border-radius: 12px; padding: 1.5rem; margin-top: 2rem;">
+                        <h4 style="color: var(--success);">🎉 恭喜你完成初级课程！</h4>
+                        <div class="lesson-text">
+                            <p>你已经掌握了Python的基础知识！接下来可以学习<strong>中级课程</strong>，探索更多高级特性。</p>
+                            <p style="margin-top: 1rem;">
+                                <button class="btn btn--cta" data-page="intermediate" style="margin-top: 0.5rem;">
+                                    🚀 继续学习中级课程
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

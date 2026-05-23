@@ -1,0 +1,215 @@
+<!-- 中级课程内容 -->
+<div class="course-container">
+    <div class="course-header">
+        <h2>⚡ Python 中级课程</h2>
+        <p>10个进阶章节，掌握Python高级特性，迈向专业程序员之路</p>
+    </div>
+
+    <div class="chapter-list">
+        <!-- M1: 面向对象编程 -->
+        <div class="chapter-item">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #667eea, #764ba2);">M1</div>
+                    <div class="chapter-title-text">
+                        <h3>面向对象编程</h3>
+                        <span>类与对象 · 构造函数 · 属性与方法 · 封装特性</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>理解面向对象编程思想，学会创建类和使用对象。</p>
+                        </div>
+                    </div>
+                    <div class="lesson-section">
+                        <h4>🏗️ 类与对象</h4>
+                        <pre class="code-block"><code>class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def bark(self):
+        print(f"{self.name}说：汪汪！")
+
+# 创建对象
+my_dog = Dog("小白", 3)
+print(my_dog.name)  # 小白
+my_dog.bark()       # 小白说：汪汪！</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- M2: 继承与多态 -->
+        <div class="chapter-item">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #f093fb, #00f260);">M2</div>
+                    <div class="chapter-title-text">
+                        <h3>继承与多态</h3>
+                        <span>类的继承 · super()函数 · 方法重写 · 多态特性</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <div class="lesson-section">
+                        <h4>🎯 学习目标</h4>
+                        <div class="lesson-text">
+                            <p>学会使用继承复用代码，理解多态的概念。</p>
+                        </div>
+                    </div>
+                    <pre class="code-block"><code>class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        pass
+
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name}说：喵喵！"
+
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name}说：汪汪！"
+
+# 多态
+animals = [Cat("小花"), Dog("小黑")]
+for animal in animals:
+    print(animal.speak())</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- M3: 文件操作 -->
+        <div class="chapter-item">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #4facfe, #00f0ff);">M3</div>
+                    <div class="chapter-title-text">
+                        <h3>文件操作与持久化</h3>
+                        <span>文件读写 · JSON格式 · 异常处理 · 上下文管理</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+            <div class="chapter-content">
+                <div class="chapter-body">
+                    <pre class="code-block"><code># 读取文件
+with open('data.txt', 'r', encoding='utf-8') as f:
+    content = f.read()
+    print(content)
+
+# 写入文件
+with open('output.txt', 'w', encoding='utf-8') as f:
+    f.write("Hello, Python!")
+
+# JSON操作
+import json
+data = {'name': '小明', 'age': 10}
+json_str = json.dumps(data, ensure_ascii=False)
+print(json_str)</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- M4-M10 简化展示 -->
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #bc13fe, #ff6b6b);">M4</div>
+                    <div class="chapter-title-text">
+                        <h3>装饰器与高阶函数 <span class="coming-badge">即将推出</span></h3>
+                        <span>闭包详解 · 装饰器模式 · 多重装饰 · wraps装饰</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #00f260, #4facfe);">M5</div>
+                    <div class="chapter-title-text">
+                        <h3>生成器与迭代器 <span class="coming-badge">即将推出</span></h3>
+                        <span>迭代协议 · yield关键字 · 生成器表达式 · 惰性计算</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #ffa500, #ff6b6b);">M6</div>
+                    <div class="chapter-title-text">
+                        <h3>Lambda与函数式编程 <span class="coming-badge">即将推出</span></h3>
+                        <span>匿名函数 · map/filter/reduce · 函数组合</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #00f0ff, #667eea);">M7</div>
+                    <div class="chapter-title-text">
+                        <h3>正则表达式 <span class="coming-badge">即将推出</span></h3>
+                        <span>re模块详解 · 元字符 · 分组捕获 · 贪婪匹配</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #f093fb, #ffa500);">M8</div>
+                    <div class="chapter-title-text">
+                        <h3>模块与包管理 <span class="coming-badge">即将推出</span></h3>
+                        <span>模块导入 · __name__机制 · 包结构 · pip安装</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #4facfe, #00f260);">M9</div>
+                    <div class="chapter-title-text">
+                        <h3>时间与日期处理 <span class="coming-badge">即将推出</span></h3>
+                        <span>datetime模块 · 时间戳 · 日期格式化 · timedelta</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+
+        <div class="chapter-item coming-soon">
+            <div class="chapter-header" data-toggle="chapter" role="button" tabindex="0" aria-expanded="false">
+                <div class="chapter-info">
+                    <div class="chapter-num" style="background: linear-gradient(135deg, #667eea, #f093fb);">M10</div>
+                    <div class="chapter-title-text">
+                        <h3>综合项目实战 <span class="coming-badge">即将推出</span></h3>
+                        <span>个人日记本 · 通讯录管理 · 数据分析脚本</span>
+                    </div>
+                </div>
+                <div class="chapter-toggle">▼</div>
+            </div>
+        </div>
+    </div>
+</div>

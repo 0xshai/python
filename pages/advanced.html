@@ -1,0 +1,89 @@
+<!-- 高级课程内容 -->
+<div class="course-container">
+    <div class="course-header">
+        <h2>🚀 Python 高级课程</h2>
+        <p>掌握专业级技能，成为真正的Python开发者</p>
+    </div>
+
+    <div class="advanced-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; padding: 0 2rem;">
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A1</div>
+            <h3>🌐 网络编程与Web开发</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">Socket编程基础、HTTP协议解析、使用Flask构建Web应用、RESTful API设计。</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+                <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 8px; font-size: 0.85rem; color: var(--text-dim);">Socket</span>
+                <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 8px; font-size: 0.85rem; color: var(--text-dim);">Flask</span>
+                <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 8px; font-size: 0.85rem; color: var(--text-dim);">HTTP</span>
+                <span style="background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border); padding: 0.4rem 1rem; border-radius: 8px; font-size: 0.85rem; color: var(--text-dim);">API</span>
+            </div>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello, World!'</code></pre>
+        </div>
+
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A2</div>
+            <h3>⚡ 异步编程与并发</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">深入理解asyncio库、协程与事件循环、异步IO操作、高并发程序设计。</p>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>import asyncio
+
+async def main():
+    await asyncio.sleep(1)
+    print("Hello!")
+
+asyncio.run(main())</code></pre>
+        </div>
+
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A3</div>
+            <h3>📊 数据分析与可视化</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">NumPy数值计算、Pandas数据处理、Matplotlib数据可视化、数据清洗。</p>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>import pandas as pd
+import matplotlib.pyplot as plt
+
+data = pd.read_csv('data.csv')
+data.plot(kind='bar')
+plt.show()</code></pre>
+        </div>
+
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A4</div>
+            <h3>🤖 机器学习入门</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">Scikit-learn核心算法、监督学习与无监督学习、模型训练与评估。</p>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>from sklearn import svm
+from sklearn import datasets
+
+clf = svm.SVC()
+iris = datasets.load_iris()
+clf.fit(iris.data, iris.target)</code></pre>
+        </div>
+
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A5</div>
+            <h3>🗄️ 数据库与SQL</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">SQLite基础操作、MySQL连接与查询、SQLAlchemy ORM、数据库设计。</p>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>import sqlite3
+
+conn = sqlite3.connect('test.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM users')
+results = cursor.fetchall()</code></pre>
+        </div>
+
+        <div class="advanced-card" style="background: linear-gradient(145deg, rgba(102, 126, 234, 0.08), rgba(79, 172, 254, 0.08)); border: 1px solid rgba(102, 126, 234, 0.25); border-radius: 24px; padding: 2.5rem;">
+            <div class="adv-num" style="font-size: 0.85rem; font-weight: 700; color: var(--accent); background: rgba(79, 172, 254, 0.15); padding: 0.4rem 1.2rem; border-radius: 50px; display: inline-block; margin-bottom: 1.25rem;">A6</div>
+            <h3>🧪 测试与安全编程</h3>
+            <p style="color: var(--text-dim); margin: 1rem 0;">单元测试与pytest、异常处理进阶、日志记录、性能分析与优化。</p>
+            <pre class="code-block" style="margin-top: 1.5rem;"><code>import pytest
+
+def test_addition():
+    assert 1 + 1 == 2
+
+if __name__ == '__main__':
+    pytest.main()</code></pre>
+        </div>
+    </div>
+</div>
