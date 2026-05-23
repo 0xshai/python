@@ -11,6 +11,18 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     
+    <!-- 页面路由 - 在页面渲染前执行，确保正确显示对应页面 -->
+    <script>
+    (function() {
+        // 获取URL hash
+        var hash = window.location.hash.slice(1);
+        if (hash) {
+            // 保存目标页面到sessionStorage，供页面加载后使用
+            sessionStorage.setItem('targetPage', hash);
+        }
+    })();
+    </script>
+    
     <!-- 公共样式 -->
     <link rel="stylesheet" href="css/common.css?v=2">
     <!-- 页面特定样式 -->
@@ -2093,19 +2105,20 @@
     <!-- 公共JavaScript -->
     <script src="js/common.js?v=2"></script>
     
-    <!-- 路由调试 - 确保hash路由正常工作 -->
+    <!-- 页面路由 - 根据sessionStorage中的目标页面显示对应内容 -->
     <script>
     (function() {
-        const hash = window.location.hash.slice(1);
-        if (hash) {
-            const target = document.getElementById('page-' + hash);
+        // 从sessionStorage获取目标页面
+        var targetPage = sessionStorage.getItem('targetPage');
+        if (targetPage) {
+            var target = document.getElementById('page-' + targetPage);
             if (target) {
                 // 隐藏所有页面
-                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
                 // 显示目标页面
                 target.classList.add('active');
                 // 更新标题
-                const titles = {
+                var titles = {
                     'home': 'Python星际编程 - 青少年Python入门',
                     'course': 'Python初级课程 - 星际编程',
                     'intermediate': 'Python中级课程 - 星际编程',
@@ -2114,8 +2127,10 @@
                     'quiz': 'Python题目解析 - 星际编程',
                     'about': '关于课程 - 星际编程'
                 };
-                document.title = titles[hash] || document.title;
+                document.title = titles[targetPage] || document.title;
             }
+            // 清除sessionStorage
+            sessionStorage.removeItem('targetPage');
         }
     })();
     </script>
