@@ -2093,5 +2093,32 @@
     <!-- 公共JavaScript -->
     <script src="js/common.js?v=2"></script>
     
+    <!-- 路由调试 - 确保hash路由正常工作 -->
+    <script>
+    (function() {
+        const hash = window.location.hash.slice(1);
+        if (hash) {
+            const target = document.getElementById('page-' + hash);
+            if (target) {
+                // 隐藏所有页面
+                document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+                // 显示目标页面
+                target.classList.add('active');
+                // 更新标题
+                const titles = {
+                    'home': 'Python星际编程 - 青少年Python入门',
+                    'course': 'Python初级课程 - 星际编程',
+                    'intermediate': 'Python中级课程 - 星际编程',
+                    'advanced': 'Python高级课程 - 星际编程',
+                    'words': 'Python单词学习 - 星际编程',
+                    'quiz': 'Python题目解析 - 星际编程',
+                    'about': '关于课程 - 星际编程'
+                };
+                document.title = titles[hash] || document.title;
+            }
+        }
+    })();
+    </script>
+    
 </body>
 </html>
